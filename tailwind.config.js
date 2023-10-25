@@ -23,9 +23,7 @@ export default {
 				clampHeading: "clamp(48px, 6vw, 92px)",
 				'19': ['19px', '36px'],
 				'78': ['78px', '100px'],
-				'100': ['100px', '135px'],
-		
-		
+				'100': ['100px', '135px']
 			  },
 		}
 	},
