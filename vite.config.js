@@ -2,14 +2,15 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import viteImagemin from 'vite-plugin-imagemin';
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  basePath: "/custom/path",
-  
+  base: "/react-testing/test",
   plugins: [
     react(),
     reactRefresh(),
+	tsconfigPaths(),
     viteImagemin({
 			gifsicle: {
 				optimizationLevel: 7,
