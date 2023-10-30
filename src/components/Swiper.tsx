@@ -1,8 +1,8 @@
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slides from "../js/data/slider.js";
-import back from "/assets/images/back-arrow.svg";
-import forward from "/assets/images/forward-arrow.svg";
+import back from "../assets/images/back-arrow.svg";
+import forward from "../assets/images/forward-arrow.svg";
 
 import "swiper/css";
 import "swiper/css/pagination";

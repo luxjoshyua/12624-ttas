@@ -1,4 +1,4 @@
-import hero from "/assets/images/hero.jpg";
+import hero from "../assets/images/hero.jpg";
 
 const Hero = () => (
   <header className="hero flex flex-col items-center justify-center p-0 text-center h-auto">
