@@ -25,6 +25,11 @@ export default {
 				'78': ['78px', '100px'],
 				'100': ['100px', '135px']
 			  },
+			  lineHeight: {
+				tight: '1.00',
+				normal: '1.35',
+				custom: '1.5',
+			},
 		}
 	},
   plugins: [],

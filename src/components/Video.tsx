@@ -1,14 +1,19 @@
-import * as React from "react";
+import React from "react";
 import useExternalScripts from "../hooks/useExternalScripts";
 
-interface VideoJSX extends React.JSX.IntrinsicElements {
-  "video-js": any;
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "video-js": any;
+    }
+  }
 }
 
 const Video: React.FC = () => {
   useExternalScripts(
     "https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js"
   );
+
   return (
     <>
       <div className="full-bg z-[-1]">
