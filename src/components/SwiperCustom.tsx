@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
 
 import back from "../assets/images/back-arrow.svg";
 import forward from "../assets/images/forward-arrow.svg";
@@ -29,6 +30,7 @@ const SwiperCustom: React.FC<{
         modules={[Navigation, Mousewheel, EffectFade, Autoplay]}
         direction="horizontal"
         slidesPerView={"auto"}
+        effect="fade"
         speed={1000}
         autoplay={{
           delay: 2000,

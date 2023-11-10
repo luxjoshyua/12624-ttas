@@ -1,4 +1,5 @@
 import logo from "../assets/common/logo.svg";
+import CustomLink from "./blocks/CustomLink";
 
 const Header = () => {
   return (
@@ -7,14 +8,9 @@ const Header = () => {
         Advertising feature
         <span className="reader-only">sponsored by BRAND</span>
       </h3>
-      <a
-        href="www.google.com"
-        className="integration-logo"
-        target="_blank"
-        rel="sponsored noopener noreferrer"
-      >
-        <img src={logo} alt="BRAND logo" />
-      </a>
+      <CustomLink href="https://google.com" className="integration-logo">
+        <img src={logo} alt="Brand logo" />
+      </CustomLink>
     </header>
   );
 };

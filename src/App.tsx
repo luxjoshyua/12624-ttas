@@ -5,8 +5,9 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SwiperCustom from "./components/SwiperCustom";
+import CustomLink from "./components/blocks/CustomLink";
+import Button from "./components/blocks/Button";
 import slides from "./js/data/slider.ts";
-import hero from "./assets/images/hero.jpg";
 import img1 from "./assets/images/desktop/image-1.jpg";
 
 const App = () => {
@@ -61,7 +62,15 @@ const App = () => {
                 </h1>
               </div>
             </header>
-            <section className="chapter chapter-1 h-screen bg-orange-600"></section>
+            <section className="chapter chapter-1 bg-orange-600">
+              <div className="flex justify-center items-center h-screen">
+                <Button
+                  href="https://www.google.com"
+                  text="Find out more"
+                  bgColor="bg-blue-600"
+                />
+              </div>
+            </section>
             <section className="chapter chapter-2">
               <SwiperCustom slidesData={slides1} keyProp="swiper-10" />
             </section>
