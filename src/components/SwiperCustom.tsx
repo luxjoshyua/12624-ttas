@@ -49,7 +49,11 @@ const SwiperCustom: React.FC<{
         {slidesData.map((slide: { image: string; id: number }) => (
           <SwiperSlide key={slide.id}>
             <div>
-              <img src={slide.image} alt={slide.image} className="w-full" />
+              <img
+                src={slide.image}
+                alt={slide.image}
+                className="object-cover h-full"
+              />
             </div>
           </SwiperSlide>
         ))}
