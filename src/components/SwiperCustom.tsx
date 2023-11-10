@@ -10,7 +10,7 @@ import forward from "../assets/images/forward-arrow.svg";
 
 interface SlidesProps {
   id: number;
-  image: any;
+  image: string;
 }
 
 const SwiperCustom: React.FC<{
@@ -44,7 +44,7 @@ const SwiperCustom: React.FC<{
           setSwiperInstance(swiper);
         }}
       >
-        {slidesData.map((slide: { image: any; id: number }) => (
+        {slidesData.map((slide: { image: string; id: number }) => (
           <SwiperSlide key={slide.id}>
             <div>
               <img src={slide.image} alt={slide.image} className="w-full" />
