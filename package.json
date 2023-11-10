@@ -11,9 +11,11 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.27",
     "@types/video.js": "^7.3.55",
-    "gsap": "^3.12.2",
+    "gsap": "npm:@gsap/shockingly@^3.12.2",
     "include-media": "^2.0.0",
+    "install": "^0.13.0",
     "nine-immersive-header": "^0.6.6",
+    "npm": "^10.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^11.0.1"

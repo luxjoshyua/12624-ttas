@@ -1,4 +1,4 @@
-import Swiper from "./Swiper";
+import Swiper from "./SwiperCustom.tsx";
 import slides from "../js/data/slider.ts";
 
 const Chapter3 = () => {
@@ -8,9 +8,7 @@ const Chapter3 = () => {
         <h3 className="text-center text-white text-78 reader-only">
           Chapter 3
         </h3>
-        <div className="w-3/5">
-          <Swiper slidesData={slides} />
-        </div>
+        <div className="w-3/5">{/* <Swiper slidesData={slides} /> */}</div>
       </div>
     </section>
   );
