@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="integration-message">
       <h3 className="integration-text">
-        Advertising feature
+        Advertising feature{" "}
         <span className="reader-only">sponsored by BRAND</span>
       </h3>
       <CustomLink href="https://google.com" className="integration-logo">
