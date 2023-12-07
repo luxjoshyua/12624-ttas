@@ -22,7 +22,6 @@ const App = () => {
       smooth: 1,
       effects: true,
       speed: 0.8,
-      normalizeScroll: true,
     });
   }, []);
 
