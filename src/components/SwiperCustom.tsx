@@ -9,10 +9,10 @@ import "swiper/css/effect-fade";
 import back from "../assets/images/back-arrow.svg";
 import forward from "../assets/images/forward-arrow.svg";
 
-interface SlidesProps {
+type SlidesProps = {
   id: number;
   image: string;
-}
+};
 
 const SwiperCustom: React.FC<{
   slidesData: SlidesProps[];

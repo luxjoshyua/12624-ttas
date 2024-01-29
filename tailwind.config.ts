@@ -6,6 +6,7 @@ export default {
   theme: {
 		extend: {
 			screens: {
+				tiny: '279x',
 				mb: '428px',
                 tb: '768px',
                 sm: '1024px',
@@ -21,6 +22,7 @@ export default {
 			},
 			fontSize: {
 				clampHeading: "clamp(48px, 6vw, 92px)",
+				clampHeading2: "clamp(30px, 5vw, 54px)",
 				'19': ['19px', '36px'],
 				'78': ['78px', '100px'],
 				'100': ['100px', '135px']

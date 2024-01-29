@@ -10,14 +10,17 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   children,
 }) => {
   return (
-    <a
-      href={href}
-      className={className}
-      target="_blank"
-      rel="sponsored noopener noreferrer"
-    >
-      {children}
-    </a>
+    <>
+      {" "}
+      <a
+        href={href}
+        className={className}
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        {children}
+      </a>{" "}
+    </>
   );
 };
 

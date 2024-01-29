@@ -49,7 +49,7 @@ const App = () => {
   return (
     <>
       <div>
-        <main className="mx-auto relative max-w-[1920px]">
+        <main className="mx-auto relative max-w-[1920px]" id="smooth-content">
           <Header />
           <article>
             <header className="hero flex flex-col items-center justify-center p-0 text-center h-auto pb-[10rem]">
