@@ -1,4 +1,3 @@
-import React from "react";
 import useExternalScripts from "../hooks/useExternalScripts";
 
 declare global {
@@ -15,7 +14,7 @@ interface VideoProps {
   videoId: string;
 }
 
-const Video: React.FC<VideoProps> = ({ scriptUrl, playerId, videoId }) => {
+const Video = ({ scriptUrl, playerId, videoId }: VideoProps) => {
   useExternalScripts(scriptUrl);
 
   return (

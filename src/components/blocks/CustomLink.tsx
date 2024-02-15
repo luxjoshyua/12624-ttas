@@ -1,14 +1,12 @@
+import React from "react";
+
 interface CustomLinkProps {
   href: string;
   className: string;
   children: React.ReactNode;
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({
-  href,
-  className = "",
-  children,
-}) => {
+const CustomLink = ({ href, className = "", children }: CustomLinkProps) => {
   return (
     <>
       {" "}

@@ -1,5 +1,5 @@
-import Swiper from "./SwiperCustom.tsx";
-import slides from "../js/data/slider.ts";
+// import Swiper from "./SwiperCustom.tsx";
+// import slides from "../js/data/slider.ts";
 
 const Chapter3 = () => {
   return (
