@@ -2,7 +2,6 @@
 // This file contains all mixins and utility styles.
 // -----------------------------------------------------------------------------
 
-
 @mixin centreContent {
   align-items: center;
   display: flex;
@@ -20,6 +19,10 @@
     width: 100%;
     height: auto;
   }
+}
+
+.block-copy p:last-of-type {
+  padding-bottom: 0;
 }
 
 .full-width {

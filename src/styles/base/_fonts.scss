@@ -16,10 +16,46 @@
 }
 
 @font-face {
-	font-family: 'ProximaNova';
-	src: url('../assets/fonts/ProximaNova-Regular.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'ProximaNova';
+  src: url('../assets/fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Moderat';
+  src: url('../assets/fonts/Moderat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC_Clearface_Std';
+  src: url('../assets/fonts/ClearfaceStd-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.itc-reg {
+  font-family: 'ITC_Clearface_Std', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ITC_Clearface_Std';
+  src: url('../assets/fonts/ClearfaceStd-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('../assets/fonts/Moderat-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

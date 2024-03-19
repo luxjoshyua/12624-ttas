@@ -36,8 +36,6 @@
 
 .integration-logo {
   img {
-    width: 100px;
-    height: auto;
     transition: 0.2s ease-in-out;
   }
 
@@ -60,7 +58,7 @@ header {
 
 footer {
   &.integration-message {
-   bottom: 60px;
+    bottom: 60px;
     position: absolute;
     .integration-text {
       color: white;
