@@ -4,7 +4,7 @@ import heroSquiggles from '../../../assets/images/desktop/hero-squiggles.png'
 import { Image } from '../../miscellaneous'
 
 const Hero: React.FC = () => (
-  <header className="hero block h-auto w-full px-0 pb-[20rem] before:w-full before:bg-purple before:h-[41rem] before:absolute before:top-0 before:left-0 before:z-10 after:w-full after:bg-mustard after:absolute after:bottom-0 after:left-0 after:h-full ">
+  <header className="hero block h-auto w-full px-0 pb-[20rem] before:w-full before:bg-purple before:h-[41rem] before:absolute before:top-0 before:left-0 before:z-10 after:w-full after:bg-mustard after:absolute after:bottom-0 after:left-0 after:h-full top-[4.4rem]">
     <div className="absolute bg-heroSquiggles bg-cover bg-no-repeat bg-center z-10 inset-0" />
 
     <div className="block-video-outer max-w-[128rem] mx-auto h-[75rem] mb-[14rem] relative z-10">
