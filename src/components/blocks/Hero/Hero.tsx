@@ -28,7 +28,7 @@ const Hero: React.FC = () => (
           state
         </p>
       </div>
-      <div className="block-copy">
+      <div className="block-copy text-[2rem]">
         <p>
           With the use of AI image generators on the rise, Tourism Tasmania
           decided to flip the switch back to human creativity — by giving the

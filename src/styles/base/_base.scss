@@ -32,13 +32,13 @@ html {
 body {
   @include font-opentype;
   @include font-smoothing;
-  font-family: 'Moderat', Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-family: "Moderat", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.5em;
 }
 
 .prox-reg {
-  font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
