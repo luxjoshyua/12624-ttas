@@ -1,35 +1,32 @@
-import { RefObject } from 'react'
+import { RefObject } from "react";
 
 export type ImageProps = {
-  src: string
-  alt: string
-  className?: string
-  'data-scroll'?: boolean
-  'data-scroll-speed'?: string
-  index?: number
-}
+  src: string;
+  alt: string;
+  className?: string;
+  "data-scroll"?: boolean;
+  "data-scroll-speed"?: string;
+  index?: number;
+};
 
-export type ImageHeadingBlockProps = {
-  img: string
-  headingOne: string
-  headingTwo: string
-  className?: string
-  classNameTwo?: string
-  classNameThree?: string
-  classNameFour?: string
-  sec4?: boolean
-}
+export type ArtistObject = {
+  heroImages: string[];
+  name: string;
+  medium: string;
+  bio: string;
+  aiOutput: string;
+  instagram?: string;
+};
 
-export type AccordionItemProps = {
-  header: string
-  children: React.ReactNode
-  className?: string
-  onClick?: () => void
-}
+export type ArtistBlockImagesType = {
+  matchedArtist: ArtistObject | undefined;
+};
+
+export type ArtistBlockTextType = {
+  matchedArtist: ArtistObject | undefined;
+};
 
 export type LocomotiveScrollProps = {
-  locoScrollRef: RefObject<HTMLElement>
-  children: React.ReactNode
-}
-
-export type AccordionKeys = 'Peace of mind' | 'Flexibility' | 'Options'
+  locoScrollRef: RefObject<HTMLElement>;
+  children: React.ReactNode;
+};

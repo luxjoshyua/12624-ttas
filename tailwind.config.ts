@@ -18,6 +18,7 @@ export default {
         'dark-blue': '#192958',
         purple: '#A7AAF0',
         mustard: '#978332',
+        cream: '#EFECD9',
       },
       fontSize: {
         clampHeading: 'clamp(48px, 6vw, 92px)',
