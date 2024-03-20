@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Hero from "./components/blocks/Hero/Hero.tsx";
 import SectionTwo from "./components/blocks/SectionTwo/index.tsx";
+import SectionThree from "./components/blocks/SectionThree/index.tsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SwiperCustom from "./components/SwiperCustom";
@@ -56,8 +57,9 @@ const App = () => {
           <article>
             <Hero />
             <SectionTwo />
+            <SectionThree />
           </article>
-          <Footer />
+          {/* <Footer /> */}
         </main>
       </div>
     </>

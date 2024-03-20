@@ -7,7 +7,6 @@ import instagramIcon from "../../../assets/common/instagram-icon.svg";
 export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
   matchedArtist,
 }) => {
-  console.log(matchedArtist);
   return (
     <div className="mb-[6rem]">
       <div className="h-[63rem] bg-pink-300">

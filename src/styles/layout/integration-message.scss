@@ -19,11 +19,9 @@
   height: auto;
   flex-direction: column;
   text-align: center;
-  z-index: 10;
 }
 
 .integration-text {
-  color: $white;
   font-family: lato, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
@@ -32,6 +30,7 @@
   margin: 0 0 0px;
   padding-bottom: 12px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .integration-logo {

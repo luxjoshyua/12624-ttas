@@ -138,10 +138,7 @@ const SectionTwo: React.FC = () => {
               />
             </div>
           </div>
-          <ArtistBlockText
-            matchedArtist={matchedArtist}
-            activeArtist={activeArtist}
-          />
+          <ArtistBlockText matchedArtist={matchedArtist} />
           <div className="block-navigation w-full flex items-start justify-between itc-bold text-[2rem]">
             <div className="block-navigation__prev">
               <button
