@@ -5,7 +5,7 @@ import Video from "../../Video";
 import Button from "../Button";
 
 const SectionThree: React.FC = () => (
-  <section className="bg-purple pt-[11rem] pb-[9rem]">
+  <section className="bg-purple pt-[6rem] lg:pt-[11rem] pb-[9rem]">
     <div className="block-inner lg:max-w-[85vw] 2xl:max-w-[129rem] mx-auto flex flex-col items-center justify-center">
       <div
         className="block-video mb-[4rem] w-full"
@@ -19,18 +19,18 @@ const SectionThree: React.FC = () => (
         />
       </div>
       <p
-        className="itc-bold text-[3.1rem] pb-[4rem]"
+        className="itc-bold text-[2rem] lg:text-[3.1rem] pb-[4rem] px-[3rem] lg:px-0 text-center"
         data-scroll
         data-scroll-speed=".05"
       >
-        See what human creativity can still do
+        Visit the TasmanAi website to see what human creativity can still do
       </p>
       <Button
         href="https://www.discovertasmania.com.au/tasmanai"
         text="Discover"
         bgColor="bg-black"
         textColor="text-white"
-        className="mb-[13rem] hover:scale-110 transition-transform duration-200 linear"
+        className="mb-[9rem] lg:mb-[13rem]  hover:scale-110 transition-transform duration-200 linear w-[22rem] lg:w-auto"
         data-scroll
         data-scroll-speed=".5"
       />

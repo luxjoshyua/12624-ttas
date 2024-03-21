@@ -16,11 +16,11 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <a
       href={href}
-      className={`w-full max-w-[33.5rem] rounded-[4.4rem] py-[3rem] ${bgColor} hover:opacity-90 ${textColor} z-10 font-bold text-center block text-[2.7rem] mx-auto ${className}`}
+      className={`w-full max-w-[33.5rem] rounded-[4.4rem] py-[1.5rem] lg:py-[3rem] ${bgColor} hover:opacity-90 ${textColor} z-10 font-bold text-center block mx-auto ${className}`}
       target="_blank"
       rel="sponsored noopener noreferrer"
     >
-      <p className="pb-0">{text}</p>
+      <p className="pb-0 text-[1.7rem] lg:text-[2.7rem]">{text}</p>
     </a>
   );
 };
