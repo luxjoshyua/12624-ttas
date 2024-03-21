@@ -146,7 +146,7 @@ const SectionTwo: React.FC = () => {
           <div className="block-navigation w-full flex items-start justify-between itc-bold text-[2rem]">
             <div className="block-navigation__prev">
               <button
-                className={`button button--secondary cursor-pointer flex items-start ${
+                className={`button button--secondary cursor-pointer flex items-start group ${
                   isJoshFoley ? "opacity-40" : "opacity-100"
                 }`}
                 onClick={() => {
@@ -159,14 +159,14 @@ const SectionTwo: React.FC = () => {
                 <Image
                   src={arrowNext}
                   alt="Arrow Previous"
-                  className={`scale-x-[-1] mr-[1rem]`}
+                  className={`scale-x-[-1] mr-[1rem] group-hover:translate-x-[-0.5rem] transition-transform duration-300 linear`}
                 />
                 Previous
               </button>
             </div>
             <div className="block-navigation__next">
               <button
-                className="button button--secondary cursor-pointer  flex items-start"
+                className="button button--secondary cursor-pointer flex items-start group"
                 onClick={() => {
                   const newIndex = (activeArtistIndex + 1) % artistData.length;
                   setActiveArtist(artistData[newIndex].name);
@@ -176,7 +176,7 @@ const SectionTwo: React.FC = () => {
                 <Image
                   src={arrowNext}
                   alt="Arrow Next"
-                  className="ml-[1rem] "
+                  className="ml-[1rem] group-hover:translate-x-[0.5rem] transition-transform duration-300 linear"
                 />
               </button>
             </div>

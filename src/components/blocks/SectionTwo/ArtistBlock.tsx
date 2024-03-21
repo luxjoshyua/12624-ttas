@@ -74,7 +74,7 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
           href={instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="cursor-pointer hover:opacity-50 transition-opacity ease-linear duration-300 w-fit-content"
+          className="cursor-pointer inline-block hover:scale-110 transition-transform ease-linear duration-150 w-fit-content"
         >
           <Image src={instagramIcon} alt="Instagram icon" />
         </a>
