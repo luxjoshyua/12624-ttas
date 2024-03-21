@@ -34,6 +34,8 @@ export default {
       },
       backgroundImage: {
         heroSquiggles: "url('/src/assets/images/desktop/hero-squiggles.png')",
+        heroSquigglesMb:
+          "url('/src/assets/images/mobile/hero-squiggles-mb.jpg')",
       },
     },
   },

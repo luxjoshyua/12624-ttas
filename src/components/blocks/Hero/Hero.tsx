@@ -5,16 +5,17 @@ import { Image } from "../../miscellaneous";
 
 const Hero: React.FC = () => (
   <section className="hero relative block h-auto w-full px-0 pb-[20rem] before:w-full before:bg-purple before:h-[41rem] before:absolute before:top-0 before:left-0 before:z-10 after:w-full after:bg-mustard after:absolute after:bottom-0 after:left-0 after:h-full top-[4.4rem]">
-    <div className="absolute bg-heroSquiggles bg-cover bg-no-repeat bg-center z-10 inset-0" />
-    <div className="block-video-outer 2xl:max-w-[128rem] mx-auto lg:max-w-[85vw] mb-[14rem] relative z-10">
-      <div className="block-heading absolute top-[28rem] left-[7rem] z-10">
+    <div className="absolute bg-heroSquigglesMb lg:bg-heroSquiggles bg-contain lg:bg-cover bg-no-repeat lg:bg-center bg-bottom z-10 inset-0" />
+    <div className="block-video-outer 2xl:max-w-[128rem] mx-auto lg:max-w-[85vw] mb-[6rem] lg:mb-[14rem] relative z-10">
+      <div className="block-heading w-full text-center lg:text-left px-[1rem] lg:px-0 absolute top-[19rem] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-[28rem] lg:left-[7rem] z-[200]">
         <motion.h2
-          className="text-[5.4rem] text-white itc-reg leading-normal"
+          className="text-[2rem] lg:text-[5.4rem] text-white itc-reg leading-normal"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: "linear" }}
         >
-          Tasmania flips AI back into place with TasmanAi
+          Tasmania flips AI back into place{" "}
+          <span className="hidden lg:inline">with TasmanAi</span>
         </motion.h2>
         <h1 className="sr-only">tasman ai</h1>
         <motion.div
@@ -30,17 +31,19 @@ const Hero: React.FC = () => (
         scriptUrl="https://players.brightcove.net/6165065566001/WkAEp4m5G_default/index.min.js"
         playerId="WkAEp4m5G"
         videoId="6349211310112"
+        className="z-100 h-full lg:h-auto"
+        heroVid
       />
     </div>
-    <div className="block-copy max-w-[84rem] mx-auto flex items-start justify-between z-20 relative">
-      <div data-scroll data-scroll-speed=".2">
-        <p className="text-[3.5rem] leading-none max-w-[32rem]">
+    <div className="block-copy flex-col mb-[27rem] lg:mb-0 px-[2rem] lg:px-0 lg:flex-row lg:max-w-[84rem] mx-auto flex items-start justify-between z-20 relative">
+      <div data-scroll data-scroll-speed=".2" className="mb-[4rem] lg:mb-0">
+        <p className="text-[3rem] lg:text-[3.5rem] leading-[1.25em] max-w-[32rem]">
           Tourism Tasmania showcases the real creativity natural to the island
           state
         </p>
       </div>
       <div
-        className="block-copy text-[2rem] max-w-[45rem]"
+        className="block-copy lg:text-[2rem] max-w-[45rem]"
         data-scroll
         data-scroll-speed=".1"
       >
