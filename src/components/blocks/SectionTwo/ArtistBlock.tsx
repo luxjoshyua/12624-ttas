@@ -12,7 +12,11 @@ export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
 
   return (
     <div className="mb-[6rem] relative">
-      <div className="block-ai-output absolute left-[10%] bottom-[4rem] z-10">
+      <div
+        className="block-ai-output absolute left-[10%] bottom-[4rem] z-10"
+        data-scroll
+        data-scroll-speed=".05"
+      >
         <p
           className="text-white text-[2.3rem] pb-0 font-bold"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}

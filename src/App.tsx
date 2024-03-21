@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,12 +7,13 @@ import Hero from "./components/blocks/Hero/Hero.tsx";
 import SectionTwo from "./components/blocks/SectionTwo/index.tsx";
 import SectionThree from "./components/blocks/SectionThree/index.tsx";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 // import CustomLink from "./components/blocks/CustomLink";
-import Button from "./components/blocks/Button";
+
+import LocomotiveParallax from "./js/parallax/index.tsx";
 
 const App = () => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  const locoScrollRef = useRef(null);
 
   // useLayoutEffect(() => {
   //   ScrollSmoother.create({
@@ -48,9 +50,11 @@ const App = () => {
         <main className="mx-auto relative max-w-[1920px]" id="smooth-content">
           <Header />
           <article>
-            <Hero />
-            <SectionTwo />
-            <SectionThree />
+            <LocomotiveParallax locoScrollRef={locoScrollRef}>
+              <Hero />
+              <SectionTwo />
+              <SectionThree />
+            </LocomotiveParallax>
           </article>
           {/* <Footer /> */}
         </main>

@@ -17,8 +17,14 @@ const Hero: React.FC = () => (
           Tasmania flips AI back into place with TasmanAi
         </motion.h2>
         <h1 className="sr-only">tasman ai</h1>
-
-        <Image src={headline} alt="TasmanAI" />
+        <motion.div
+          className="text-[5.4rem] text-white itc-reg leading-normal"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4, ease: "linear" }}
+        >
+          <Image src={headline} alt="TasmanAI" />
+        </motion.div>
       </div>
       <Video
         scriptUrl="https://players.brightcove.net/6165065566001/WkAEp4m5G_default/index.min.js"
@@ -26,14 +32,18 @@ const Hero: React.FC = () => (
         videoId="6349211310112"
       />
     </div>
-    <div className="block-copy max-w-[84rem] mx-auto flex items-start justify-around z-20 relative">
-      <div>
-        <p className="text-[3.5rem] font-bold leading-none">
+    <div className="block-copy max-w-[84rem] mx-auto flex items-start justify-between z-20 relative">
+      <div data-scroll data-scroll-speed=".2">
+        <p className="text-[3.5rem] leading-none max-w-[32rem]">
           Tourism Tasmania showcases the real creativity natural to the island
           state
         </p>
       </div>
-      <div className="block-copy text-[2rem]">
+      <div
+        className="block-copy text-[2rem] max-w-[45rem]"
+        data-scroll
+        data-scroll-speed=".1"
+      >
         <p>
           With the use of AI image generators on the rise, Tourism Tasmania
           decided to flip the switch back to human creativity — by giving the
