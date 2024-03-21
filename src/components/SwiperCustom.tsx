@@ -29,7 +29,7 @@ const SwiperCustom: React.FC<{
         key={keyProp}
         modules={[Navigation, Mousewheel, EffectFade, Autoplay]}
         direction="horizontal"
-        slidesPerView={3}
+        // slidesPerView={3}
         speed={1000}
         // autoplay={{
         //   delay: 1000,
@@ -37,6 +37,14 @@ const SwiperCustom: React.FC<{
         //   pauseOnMouseEnter: true,
         // }}
         loop={true}
+        breakpoints={{
+          1: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
         // navigation={{
         //   nextEl: ".image-swiper-button-next",
         //   prevEl: ".image-swiper-button-prev",
@@ -64,7 +72,7 @@ const SwiperCustom: React.FC<{
                 <img
                   src={slide.image}
                   alt={slide.image}
-                  className="object-cover w-full h-[63rem]"
+                  className="object-cover object-top lg:object-center w-full h-[60vh] poso lg:h-[63rem]"
                 />
                 {/* {slide.id === 2 && (
                   <div>

@@ -31,16 +31,20 @@ const SectionTwo: React.FC = () => {
   return (
     <section className="bg-cream w-full relative z-20 pb-[5rem]">
       <div className="max-w-[192rem] mx-auto">
-        <div className="block-heading bg-black text-white py-[10rem] text-center">
-          <div className="block-inner max-w-[85rem] mx-auto">
+        <div className="block-heading bg-black text-white py-[6rem] lg:py-[10rem] text-center">
+          <div className="block-inner max-w-[85rem] mx-auto px-[4rem] lg:px-0">
             <h2
-              className="itc-reg text-[7.7rem] leading-none mb-[2rem]"
+              className="itc-reg text-[5rem] lg:text-[7.7rem] leading-none mb-[2rem]"
               data-scroll
               data-scroll-speed=".05"
             >
               The genius behind the AI
             </h2>
-            <p className="text-[2rem] pb-0" data-scroll data-scroll-speed=".1">
+            <p
+              className="text-[1.7rem] lg:text-[2rem] pb-0"
+              data-scroll
+              data-scroll-speed=".1"
+            >
               Here are the flesh-and-blood Tasmanian artists who responded to
               prompts from the public with real artworks such as paintings,
               illustrations and drawings for the TasmanAi project.
@@ -50,7 +54,7 @@ const SectionTwo: React.FC = () => {
         <ArtistBlockImages matchedArtist={matchedArtist} />
 
         <div className="text-block max-w-[103rem] mx-auto ">
-          <div className="artist-selection-block grid grid-cols-9 gap-4 grid-flow-col mb-[6rem]">
+          <div className="artist-selection-block flex flex-wrap justify-center mb-[6rem] max-w-[95vw] lg:max-w-none mx-auto">
             <div
               className="artist artist--1"
               onClick={() => setActiveArtist("Josh Foley")}
@@ -143,10 +147,10 @@ const SectionTwo: React.FC = () => {
             </div>
           </div>
           <ArtistBlockText matchedArtist={matchedArtist} />
-          <div className="block-navigation w-full flex items-start justify-between itc-bold text-[2rem]">
+          <div className="block-navigation w-full flex items-start justify-between itc-bold text-[2rem] px-[3rem] lg:px-0">
             <div className="block-navigation__prev">
               <button
-                className={`button button--secondary cursor-pointer flex items-start group ${
+                className={`button button--secondary cursor-pointer flex items-center text-[1.6rem] group ${
                   isJoshFoley ? "opacity-40" : "opacity-100"
                 }`}
                 onClick={() => {
@@ -159,14 +163,14 @@ const SectionTwo: React.FC = () => {
                 <Image
                   src={arrowNext}
                   alt="Arrow Previous"
-                  className={`scale-x-[-1] mr-[1rem] group-hover:translate-x-[-0.5rem] transition-transform duration-300 linear`}
+                  className={`scale-x-[-1] mr-[1rem] group-hover:translate-x-[-0.5rem] transition-transform duration-300 linear relative -top-[.2rem]`}
                 />
                 Previous
               </button>
             </div>
             <div className="block-navigation__next">
               <button
-                className="button button--secondary cursor-pointer flex items-start group"
+                className="button button--secondary cursor-pointer flex items-center group text-[1.6rem]"
                 onClick={() => {
                   const newIndex = (activeArtistIndex + 1) % artistData.length;
                   setActiveArtist(artistData[newIndex].name);
@@ -176,7 +180,7 @@ const SectionTwo: React.FC = () => {
                 <Image
                   src={arrowNext}
                   alt="Arrow Next"
-                  className="ml-[1rem] group-hover:translate-x-[0.5rem] transition-transform duration-300 linear"
+                  className="ml-[1rem] group-hover:translate-x-[0.5rem] transition-transform duration-300 linear relative -top-[.2rem]"
                 />
               </button>
             </div>

@@ -13,19 +13,19 @@ export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
   return (
     <div className="mb-[6rem] relative">
       <div
-        className="block-ai-output absolute left-[10%] bottom-[4rem] z-10"
+        className="block-ai-output absolute left-[2rem] lg:left-[10%] bottom-[2rem] max-w-[50%] lg:max-w-none lg:bottom-[4rem] z-10"
         data-scroll
         data-scroll-speed=".05"
       >
         <p
-          className="text-white text-[2.3rem] pb-0 font-bold"
+          className="text-white text-[1.9rem] leading-[1.2em] lg:leading-normal lg:text-[2.3rem] pb-0 font-bold"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           <span className="uppercase block pb-[.5rem]">prompt:</span>
           {aiOutput}
         </p>
       </div>
-      <div className="h-[63rem] overflow-hidden">{heroGallery}</div>
+      <div className="lg:h-[63rem] overflow-hidden">{heroGallery}</div>
     </div>
   );
 };
@@ -39,7 +39,7 @@ export const ArtistBlockBioImage: React.FC<{
 
   return (
     <div
-      className={`w-[10rem] h-[10rem] rounded-full cursor-pointer hover:opacity-100 transition-opacity ease-linear duration-300 ${
+      className={`w-[6rem] h-[6rem] m-2 lg:m-0 lg:w-[10rem] lg:h-[10rem] rounded-full cursor-pointer hover:opacity-100 transition-opacity ease-linear duration-300 ${
         isActiveArtist ? "opacity-100" : "opacity-40"
       }`}
     >
@@ -55,17 +55,19 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
   const { name, medium, bio, aiOutput, instagram } = matchedArtist;
 
   return (
-    <motion.div className="flex items-start justify-between mb-[19rem]">
-      <div className={`block-artist-bio max-w-[47rem] mr-[5rem]`}>
-        <h2 className="itc-reg leading-none uppercase text-[5.5rem] mb-[3rem]">
+    <motion.div className="flex lg:flex-row flex-col items-start justify-between mb-[4rem] lg:mb-[19rem]">
+      <div
+        className={`block-artist-bio lg:max-w-[47rem] lg:mr-[5rem] px-[3rem] lg:px-0 pb-[6rem] lg:pb-0`}
+      >
+        <h2 className="itc-reg leading-none uppercase text-[4.4rem] lg:text-[5.5rem] mb-[3rem]">
           {name}
         </h2>
-        <p className="text-mustard pb-[3rem]">
+        <p className="text-mustard pb-[3rem] text-[1.5rem] font-base-lg">
           <strong>Medium: </strong>
           {medium}
         </p>
-        <p>{bio}</p>
-        <p className="text-mustard pb-[3rem]">
+        <p className="text-[1.5rem] font-base-lg">{bio}</p>
+        <p className="text-mustard pb-[3rem] text-[1.5rem] font-base-lg">
           <strong>Expected TasmanAi output:</strong>
           <br />
           {aiOutput}
@@ -80,7 +82,7 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
         </a>
       </div>
       <div className="block-general-info max-w-[52.5rem] bg-mustard text-white w-full">
-        <div className="block-inner max-w-[43rem] mx-auto py-[5rem]">
+        <div className="block-inner max-w-[43rem] mx-auto py-[6rem] px-[3rem] lg:px-0">
           <p className="itc-reg text-[2rem] leading-none pb-[2rem]">
             On TasmanAi
           </p>
