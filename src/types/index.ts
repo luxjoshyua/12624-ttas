@@ -10,7 +10,7 @@ export type ImageProps = {
 };
 
 export type ArtistObject = {
-  heroImages: string[];
+  heroGallery: JSX.Element;
   name: string;
   medium: string;
   bio: string;

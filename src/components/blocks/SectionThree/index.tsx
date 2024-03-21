@@ -6,7 +6,7 @@ import Button from "../Button";
 
 const SectionThree: React.FC = () => (
   <section className="bg-purple pt-[11rem] pb-[9rem]">
-    <div className="block-inner max-w-[129rem] mx-auto flex flex-col items-center justify-center">
+    <div className="block-inner lg:max-w-[85vw] 2xl:max-w-[129rem] mx-auto flex flex-col items-center justify-center">
       <div className="block-video mb-[4rem] w-full">
         <Video
           scriptUrl="https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js"

@@ -7,12 +7,21 @@ import instagramIcon from "../../../assets/common/instagram-icon.svg";
 export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
   matchedArtist,
 }) => {
+  if (!matchedArtist) return null;
+  const { heroGallery, aiOutput } = matchedArtist;
+
   return (
-    <div className="mb-[6rem]">
-      <div className="h-[63rem] bg-pink-300">
-        <span>artist gallery here</span>
-        <span>artist prompt here if they got one</span>
+    <div className="mb-[6rem] relative">
+      <div className="block-ai-output absolute left-[10%] bottom-[4rem] z-10">
+        <p
+          className="text-white text-[2.3rem] pb-0 font-bold"
+          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+        >
+          <span className="uppercase block pb-[.5rem]">prompt:</span>
+          {aiOutput}
+        </p>
       </div>
+      <div className="h-[63rem] overflow-hidden">{heroGallery}</div>
     </div>
   );
 };

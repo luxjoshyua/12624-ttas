@@ -2,17 +2,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        tiny: "279px",
-        mb: "428px",
-        tb: "768px",
-        sm: "1024px",
-        sd: "1280px",
-        md: "1366px",
-        lg: "1440px",
-        xl: "1920px",
-        xxl: "2000px",
-      },
+      // screens: {
+      //   tiny: "279px",
+      //   mb: "428px",
+      //   tb: "768px",
+      //   sm: "1024px",
+      //   sd: "1280px",
+      //   md: "1366px",
+      //   lg: "1440px",
+      //   xl: "1920px",
+      //   xxl: "2000px",
+      // },
       colors: {
         "bright-cyan": "#58F6F4",
         "dark-blue": "#192958",

@@ -7,17 +7,10 @@ import SectionTwo from "./components/blocks/SectionTwo/index.tsx";
 import SectionThree from "./components/blocks/SectionThree/index.tsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import SwiperCustom from "./components/SwiperCustom";
 // import CustomLink from "./components/blocks/CustomLink";
 import Button from "./components/blocks/Button";
-import slides from "./js/data/slider.ts";
-import img1 from "./assets/images/desktop/image-1.jpg";
-import img2 from "./assets/images/desktop/image-2.jpg";
-import img3 from "./assets/images/desktop/image-3.jpg";
 
 const App = () => {
-  let slides1 = slides.slides1;
-
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
   // useLayoutEffect(() => {

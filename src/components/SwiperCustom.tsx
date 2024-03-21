@@ -17,6 +17,7 @@ type SlidesProps = {
 const SwiperCustom: React.FC<{
   slidesData: SlidesProps[];
   keyProp: string;
+  // aiOutput?: string;
 }> = ({ slidesData, keyProp }) => {
   const [swiperInstance, setSwiperInstance] = useState({});
 
@@ -26,44 +27,61 @@ const SwiperCustom: React.FC<{
     <div className="relative">
       <Swiper
         key={keyProp}
-        spaceBetween={0}
         modules={[Navigation, Mousewheel, EffectFade, Autoplay]}
         direction="horizontal"
-        slidesPerView={"auto"}
-        effect="fade"
+        slidesPerView={3}
         speed={1000}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 1000,
+        //   disableOnInteraction: true,
+        //   pauseOnMouseEnter: true,
+        // }}
         loop={true}
-        navigation={{
-          nextEl: ".image-swiper-button-next",
-          prevEl: ".image-swiper-button-prev",
-        }}
+        // navigation={{
+        //   nextEl: ".image-swiper-button-next",
+        //   prevEl: ".image-swiper-button-prev",
+        // }}
         onSwiper={(swiper) => {
           setSwiperInstance(swiper);
         }}
       >
-        {slidesData.map((slide: { image: string; id: number }) => (
+        {/* {slidesData.map((slide: { image: string; id: number }) => (
           <SwiperSlide key={slide.id}>
             <div>
               <img
                 src={slide.image}
                 alt={slide.image}
-                className="object-cover h-full"
+                className="object-cover w-full h-[63rem]"
               />
             </div>
           </SwiperSlide>
-        ))}
+        ))} */}
+        {slidesData.map((slide: { image: string; id: number }) => {
+          // console.log(slide.id, "slide.id");
+          return (
+            <SwiperSlide key={slide.id}>
+              <div>
+                <img
+                  src={slide.image}
+                  alt={slide.image}
+                  className="object-cover w-full h-[63rem]"
+                />
+                {/* {slide.id === 2 && (
+                  <div>
+                    <span className='text-[2.3rem] '>{aiOutput}</span>
+                  </div>
+                )} */}
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-      <div className="swiper-button image-swiper-button-next text-white absolute top-[45%] right-20 z-10">
+      {/* <div className="swiper-button image-swiper-button-next text-white absolute top-[45%] right-20 z-10">
         <img src={forward} alt="forward button" />
       </div>
       <div className="swiper-button image-swiper-button-prev text-white absolute top-[45%] left-20 z-[10]">
         <img src={back} alt="back button" />
-      </div>
+      </div> */}
     </div>
   );
 };
