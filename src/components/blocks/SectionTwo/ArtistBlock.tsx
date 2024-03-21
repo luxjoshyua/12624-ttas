@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
 import { Image } from "../../miscellaneous";
 
 import { ArtistBlockImagesType, ArtistBlockTextType } from "../../../types";
@@ -51,7 +51,7 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
   const { name, medium, bio, aiOutput, instagram } = matchedArtist;
 
   return (
-    <div className="flex items-start justify-between mb-[19rem]">
+    <motion.div className="flex items-start justify-between mb-[19rem]">
       <div className={`block-artist-bio max-w-[47rem] mr-[5rem]`}>
         <h2 className="itc-reg leading-none uppercase text-[5.5rem] mb-[3rem]">
           {name}
@@ -99,6 +99,6 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

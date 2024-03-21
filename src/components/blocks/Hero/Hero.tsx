@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import headline from "../../../assets/images/desktop/tasmanai-headline.svg";
 import Video from "../../Video";
 import { Image } from "../../miscellaneous";
@@ -7,10 +8,16 @@ const Hero: React.FC = () => (
     <div className="absolute bg-heroSquiggles bg-cover bg-no-repeat bg-center z-10 inset-0" />
     <div className="block-video-outer 2xl:max-w-[128rem] mx-auto lg:max-w-[85vw] mb-[14rem] relative z-10">
       <div className="block-heading absolute top-[28rem] left-[7rem] z-10">
-        <h2 className="text-[5.4rem] text-white itc-reg leading-normal">
+        <motion.h2
+          className="text-[5.4rem] text-white itc-reg leading-normal"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2, ease: "linear" }}
+        >
           Tasmania flips AI back into place with TasmanAi
-        </h2>
+        </motion.h2>
         <h1 className="sr-only">tasman ai</h1>
+
         <Image src={headline} alt="TasmanAI" />
       </div>
       <Video
@@ -20,7 +27,7 @@ const Hero: React.FC = () => (
       />
     </div>
     <div className="block-copy max-w-[84rem] mx-auto flex items-start justify-around z-20 relative">
-      <div className="block-copy mr-[6rem]">
+      <div>
         <p className="text-[3.5rem] font-bold leading-none">
           Tourism Tasmania showcases the real creativity natural to the island
           state
