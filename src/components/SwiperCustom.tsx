@@ -6,9 +6,6 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
 
-import back from "../assets/images/back-arrow.svg";
-import forward from "../assets/images/forward-arrow.svg";
-
 type SlidesProps = {
   id: number;
   image: string;
@@ -34,6 +31,7 @@ const SwiperCustom: React.FC<{
           disableOnInteraction: true,
           pauseOnMouseEnter: true,
         }}
+        grabCursor={true}
         loop={true}
         breakpoints={{
           1: {
