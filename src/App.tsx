@@ -47,7 +47,7 @@ const App = () => {
   return (
     <>
       <div>
-        <main className="mx-auto relative max-w-[1920px]" id="smooth-content">
+        <main className="elative" id="smooth-content">
           <Header />
           <article>
             <LocomotiveParallax locoScrollRef={locoScrollRef}>

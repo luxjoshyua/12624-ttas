@@ -54,7 +54,7 @@ const SectionTwo: React.FC = () => {
         <ArtistBlockImages matchedArtist={matchedArtist} />
 
         <div className="text-block max-w-[103rem] mx-auto ">
-          <div className="artist-selection-block flex flex-wrap justify-center mb-[6rem] max-w-[95vw] lg:max-w-none mx-auto">
+          <div className="artist-selection-block flex flex-wrap justify-center sm:justify-around mb-[6rem] max-w-[95vw] lg:max-w-none mx-auto">
             <div
               className="artist artist--1"
               onClick={() => setActiveArtist("Josh Foley")}

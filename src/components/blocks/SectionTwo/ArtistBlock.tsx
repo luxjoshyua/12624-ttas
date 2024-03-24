@@ -81,8 +81,8 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
           <Image src={instagramIcon} alt="Instagram icon" />
         </a>
       </div>
-      <div className="block-general-info max-w-[52.5rem] bg-mustard text-white w-full">
-        <div className="block-inner max-w-[43rem] mx-auto py-[6rem] px-[3rem] lg:px-0">
+      <div className="block-general-info lg:max-w-[52.5rem] bg-mustard text-white w-full">
+        <div className="block-inner lg:max-w-[43rem] mx-auto py-[6rem] px-[3rem] lg:px-0">
           <p className="itc-reg text-[2rem] leading-none pb-[2rem]">
             On TasmanAi
           </p>
