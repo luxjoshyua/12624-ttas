@@ -32,8 +32,8 @@ const Hero: React.FC = () => (
         </motion.div>
       </div>
       <Video
-        scriptUrl="https://players.brightcove.net/6165065566001/WkAEp4m5G_default/index.min.js"
-        playerId="WkAEp4m5G"
+        scriptUrl="https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js"
+        playerId="wIpGq2Kd0p"
         videoId="6349211310112"
         className="z-100 h-full lg:h-auto"
         heroVid

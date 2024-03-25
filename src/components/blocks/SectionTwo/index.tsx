@@ -153,6 +153,7 @@ const SectionTwo: React.FC = () => {
                 className={`button button--secondary cursor-pointer flex items-center text-[1.6rem] group ${
                   isJoshFoley ? "opacity-40" : "opacity-100"
                 }`}
+                disabled={isJoshFoley}
                 onClick={() => {
                   const newIndex =
                     (activeArtistIndex - 1 + artistData.length) %
