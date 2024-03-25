@@ -57,7 +57,7 @@ export const ArtistBlockText: React.FC<ArtistBlockTextType> = ({
   return (
     <motion.div className="flex lg:flex-row flex-col items-start justify-between mb-[4rem] lg:mb-[19rem]">
       <div
-        className={`block-artist-bio lg:max-w-[47rem] lg:mr-[5rem] px-[3rem] lg:px-0 pb-[6rem] lg:pb-0`}
+        className={`block-artist-bio lg:max-w-[45rem] lg:mr-[5rem] px-[3rem] lg:px-0 pb-[6rem] lg:pb-0`}
       >
         <h2 className="itc-reg leading-none uppercase text-[4.4rem] lg:text-[5.5rem] mb-[3rem]">
           {name}
