@@ -17,6 +17,8 @@ export type ArtistObject = {
   aiOutput: string;
   instagram?: string;
   prompt?: string;
+  onTasmanAi?: string;
+  unique?: string;
 };
 
 export type ArtistBlockImagesType = {
