@@ -15,7 +15,7 @@ const Hero: React.FC = () => (
       />
       <div className="block-heading w-full text-center lg:text-left px-[1rem] lg:px-0 absolute top-[19rem] left-1/2 -translate-x-1/2 lg:top-[28rem] z-[200]">
         <motion.h2
-          className="text-[2rem] lg:text-[5.4rem] text-white itc-reg leading-normal text-center"
+          className="text-[2rem] lg:text-[6.9rem] text-white itc-reg leading-normal text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: "linear" }}

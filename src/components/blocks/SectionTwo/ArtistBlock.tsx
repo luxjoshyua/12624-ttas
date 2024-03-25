@@ -8,23 +8,26 @@ export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
   matchedArtist,
 }) => {
   if (!matchedArtist) return null;
-  const { heroGallery, aiOutput } = matchedArtist;
+  const { heroGallery, prompt } = matchedArtist;
 
   return (
     <div className="mb-[6rem] relative">
-      <div
-        className="block-ai-output absolute left-0 lg:left-[10%] bottom-[2rem] lg:bottom-[4rem] z-10 px-[2rem] lg:px-0"
-        data-scroll
-        data-scroll-speed=".05"
-      >
-        <p
-          className="text-white text-[1.9rem] leading-[1.2em] lg:leading-normal lg:text-[2.3rem] pb-0 font-bold"
-          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+      {prompt && (
+        <div
+          className="block-ai-output absolute left-0 lg:left-[10%] bottom-[2rem] lg:bottom-[4rem] z-10 px-[2rem] lg:px-0"
+          data-scroll
+          data-scroll-speed=".05"
         >
-          <span className="uppercase block pb-[.5rem]">prompt:</span>
-          {aiOutput}
-        </p>
-      </div>
+          <p
+            className="text-white text-[1.9rem] leading-[1.2em] lg:leading-normal lg:text-[2.3rem] pb-0 font-bold"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          >
+            <span className="uppercase block pb-[.5rem]">prompt:</span>
+            {prompt}
+          </p>
+        </div>
+      )}
+
       <div className="lg:h-[63rem] overflow-hidden">{heroGallery}</div>
     </div>
   );

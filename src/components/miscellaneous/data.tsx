@@ -17,9 +17,10 @@ export const artistData = [
       <SwiperCustom slidesData={slidesJosh} keyProp="Gallery Josh" />
     ),
     name: "Josh Foley",
-    aiOutput: "To figure out how to upend his AI prompt.",
+    prompt: "A maze made of fruit and flowers in the Tamar Valley",
     medium: "Oil and acrylic",
     bio: "Foley likes to play with viewers’ experiences of reality by playing around with the traditional styles of landscape and still life, in textured pieces that make you question their two dimensions. “This trompe l’oeil that I work with is not to deceive but to confuse the haptic expectations and bodily position of the audience,” explains Foley, whose work is collected both in Australia and overseas, including Tasmania’s cultural cathedral Mona.",
+    aiOutput: "To figure out how to upend his AI prompt.",
     instagram: "https://www.instagram.com/joshfoleystudio/",
   },
   {
@@ -27,6 +28,7 @@ export const artistData = [
       <SwiperCustom slidesData={slidesAlan} keyProp="Gallery Alan" />
     ),
     name: "Alan Young",
+    prompt: "A robot dancing in the streets of Salamanca",
     medium: "Acrylic",
     bio: "Alan Young’s abstract expressionist paintings often use bright hues and unique points of view to give a fresh perspective on the everyday. There’s something inherently joyful in his creations. “Young is a fearless colourist… more is never enough,” enthuses arts writer Dr Jane Deeth. “The sense of delight and fun that rolls across the panoply of vibrant canvases is infectious.”",
     aiOutput: "To find the liveliness from within any prompt.",
@@ -55,6 +57,7 @@ export const artistData = [
   {
     heroGallery: <SwiperCustom slidesData={slidesSam} keyProp="Gallery Sam" />,
     name: "Sam Lyne",
+    prompt: "A giant slimy salamander in the streets of Salamanca",
     medium: "Illustration and design",
     bio: "For Sam Lyne, the (artistic) devil is in the details, as he captures minuscule features in his illustrations. His works consist of quite a layered process across various media that brings them all to fruition. “I almost always start out in pencil, primarily mechanical pencils so I can get as much detail as possible into my drawings,” he says. From there he may add watercolours to punctuate some elements, before then transferring to computer “for additional digital colouring and painting”.",
     aiOutput: "To add another layer to his complex process.",
@@ -78,6 +81,7 @@ export const artistData = [
       <SwiperCustom slidesData={slidesSteffi} keyProp="Gallery Steffi" />
     ),
     name: "Steffi Koppelwell",
+    prompt: "A figure emerging from a cocoon in takayna / Tarkine",
     medium: "Acrylic",
     bio: "A rising star on the art scene, Steffi Koppelwell views the internal workings of our minds as an architectural space that requires navigating. The press notes for her Mindscapes exhibition recently in Hobart summed up how cleverly Koppelwell “entwines the complexities of human cognition and experience into captivating visual metaphors”.",
     aiOutput:

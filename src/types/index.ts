@@ -16,6 +16,7 @@ export type ArtistObject = {
   bio: string;
   aiOutput: string;
   instagram?: string;
+  prompt?: string;
 };
 
 export type ArtistBlockImagesType = {
