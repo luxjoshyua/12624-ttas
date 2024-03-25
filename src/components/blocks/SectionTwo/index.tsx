@@ -33,14 +33,14 @@ const SectionTwo: React.FC = () => {
       <div className="max-w-[192rem] mx-auto">
         <div className="block-heading bg-black text-white py-[6rem] lg:py-[10rem] text-center">
           <div
-            className="block-inner max-w-[85rem] mx-auto px-[4rem] lg:px-0"
+            className="block-inner max-w-[85rem] mx-auto px-[5rem] lg:px-0"
             data-scroll
             data-scroll-speed=".05"
           >
             <h2 className="itc-reg text-[5rem] lg:text-[7.7rem] leading-none mb-[2rem]">
               The genius behind the AI
             </h2>
-            <p className="text-[1.7rem] lg:text-[2rem] pb-0">
+            <p className="text-[1.5rem] lg:text-[2rem] pb-0">
               Here are the flesh-and-blood Tasmanian artists who responded to
               prompts from the public with real artworks such as paintings,
               illustrations and drawings for the TasmanAi project.
