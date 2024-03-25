@@ -1,4 +1,3 @@
-import { useMediaQuery } from "react-responsive";
 import { ImageProps } from "../../types";
 // import rightArrow from '../../assets/images/right-arrow.svg'
 
