@@ -107,7 +107,7 @@ export const artistData = [
     name: "Steffi Koppelwell",
     prompt: "A figure emerging from a cocoon in takayna / Tarkine",
     medium: "Acrylic",
-    bio: "A rising star on the art scene, Steffi Koppelwell views the internal workings of our minds as an architectural space that requires navigating. The press notes for her Mindscapes exhibition recently in Hobart summed up how cleverly Koppelwell “entwines the complexities of human cognition and experience into captivating visual metaphors”.",
+    bio: "A rising star on the art scene, Steffi Koppelwell views the internal workings of our minds as an architectural space that requires navigating. The press notes for her <i>Mindscapes</i> exhibition recently in Hobart summed up how cleverly Koppelwell “entwines the complexities of human cognition and experience into captivating visual metaphors”.",
     aiOutput:
       "To respond to a prompt that would allow her room (literally) to move.",
     instagram: "https://www.instagram.com/steffikoppelwellartist/",
@@ -121,8 +121,8 @@ export const artistData = [
       <SwiperCustom slidesData={slidesJamin} keyProp="Gallery Jamin" />
     ),
     name: "Jamin",
-    medium: "Murals and street art",
-    bio: "Jamin (Dr Benjamin Kluss) is a genius at creating murals that delight the eye, as well as eye-popping installations that have popped up in galleries, universities and elsewhere. To date, he’s created more than 70 murals in Tasmania and beyond, and has had his work appear at the Gallery of Modern Art in Brisbane; he also is one of the artists who has received the prestigious Rosamond McCulloch Studio Residency in Paris",
+    medium: "Murals and illustrations",
+    bio: "Jamin (Dr Benjamin Kluss) is a genius at creating murals and street art that delight the eye, as well as eye-popping installations that have popped up in galleries, universities and elsewhere. To date, he’s created more than 70 murals in Tasmania and beyond, and has had his work appear at the Gallery of Modern Art in Brisbane; he also is one of the artists who has received the prestigious Rosamond McCulloch Studio Residency in Paris.",
     aiOutput: "Bringing his larger-than-life thinking to smaller formats.",
     instagram: "https://www.instagram.com/jamin.artist/",
     onTasmanAi:
