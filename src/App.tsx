@@ -47,7 +47,7 @@ const App = () => {
   return (
     <>
       <div>
-        <main className="elative" id="smooth-content">
+        <main className="relative">
           <Header />
           <article>
             <LocomotiveParallax locoScrollRef={locoScrollRef}>
@@ -56,7 +56,6 @@ const App = () => {
               <SectionThree />
             </LocomotiveParallax>
           </article>
-          {/* <Footer /> */}
         </main>
       </div>
     </>
