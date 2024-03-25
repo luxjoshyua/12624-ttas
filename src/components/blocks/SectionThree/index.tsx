@@ -30,9 +30,9 @@ const SectionThree: React.FC = () => (
         text="Discover"
         bgColor="bg-black"
         textColor="text-white"
-        className="mb-[9rem] lg:mb-[13rem] hover:scale-110 transition-transform duration-200 linear w-[22rem]"
+        className="mb-[9rem] lg:mt-[5rem] lg:mb-[13rem] hover:scale-110 transition-transform duration-200 linear w-[22rem]"
         data-scroll
-        data-scroll-speed=".5"
+        data-scroll-speed=".2"
       />
       <div className="block-integration-message">
         <h3 className="integration-text text-black">
