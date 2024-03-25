@@ -13,7 +13,7 @@ export const ArtistBlockImages: React.FC<ArtistBlockImagesType> = ({
   return (
     <div className="mb-[6rem] relative">
       <div
-        className="block-ai-output absolute left-[2rem] lg:left-[10%] bottom-[2rem] max-w-[50%] lg:max-w-none lg:bottom-[4rem] z-10"
+        className="block-ai-output absolute left-0 lg:left-[10%] bottom-[2rem] lg:bottom-[4rem] z-10 px-[2rem] lg:px-0"
         data-scroll
         data-scroll-speed=".05"
       >

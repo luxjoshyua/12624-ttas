@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import headline from "../../../assets/images/desktop/tasmanai-headline.svg";
+import blackFade from "../../../assets/images/desktop/hero-black-fade.png";
 import Video from "../../Video";
 import { Image } from "../../miscellaneous";
 
@@ -7,6 +8,11 @@ const Hero: React.FC = () => (
   <section className="hero relative block h-auto w-full px-0 pb-[20rem] before:w-full before:bg-purple before:h-[41rem] before:absolute before:top-0 before:left-0 before:z-10 after:w-full after:bg-mustard after:absolute after:bottom-0 after:left-0 after:h-full top-[4.4rem]">
     <div className="absolute bg-heroSquigglesMb lg:bg-heroSquiggles bg-contain lg:bg-cover bg-no-repeat lg:bg-center bg-bottom z-10 inset-0" />
     <div className="block-video-outer 2xl:max-w-[128rem] mx-auto lg:max-w-[85vw] mb-[6rem] lg:mb-[20rem] relative z-10">
+      <Image
+        src={blackFade}
+        alt="fade"
+        className="absolute inset-0 w-full z-10 h-full"
+      />
       <div className="block-heading w-full text-center lg:text-left px-[1rem] lg:px-0 absolute top-[19rem] left-1/2 -translate-x-1/2 lg:top-[28rem] z-[200]">
         <motion.h2
           className="text-[2rem] lg:text-[5.4rem] text-white itc-reg leading-normal text-center"
@@ -34,10 +40,17 @@ const Hero: React.FC = () => (
         scriptUrl="https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js"
         playerId="wIpGq2Kd0p"
         videoId="6349211310112"
-        className="z-100 h-full lg:h-auto"
+        className="z-100 hidden sm:block"
+      />
+      <Video
+        scriptUrl="https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js"
+        playerId="wIpGq2Kd0p"
+        videoId="6349650306112"
+        className="z-100 h-full sm:hidden"
         heroVid
       />
     </div>
+
     <div className="block-copy flex-col mb-[27rem] lg:mb-0 px-[2rem] lg:px-0 lg:flex-row lg:max-w-[84rem] mx-auto flex items-start justify-between z-20 relative">
       <div data-scroll data-scroll-speed=".1" className="mb-[4rem] lg:mb-0">
         <p className="text-[3rem] lg:text-[3.5rem] leading-[1.25em] lg:max-w-[32rem]">
